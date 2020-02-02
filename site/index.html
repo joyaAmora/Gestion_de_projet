@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="template.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="semantic.min.js"></script>
+    <script src="/gauge/raphael-2.1.4.min.js"></script>
+    <script src="/gauge/justgage.js"></script>
+    <script src="/chart/Chart.js"></script>
+    <!------------------------------------------------------------------------------------------------------->
+  </head>
+  <body>
+    <!---------------------------------NAV BAR--------------------------------->
+    <div id="navbar" class="ui blue fixed inverted small menu">
+      <div class="container">
+        <div class="title item">
+          <b>Gestion d'environnement</b>
+        </div>
+        <a class="item">
+          Acceuil
+        </a>
+        <a class="item">
+          À propos
+        </a>
+        <a class="active item">
+          Mesures
+        </a>
+        <a class="item">
+          Historique (stats)
+        </a>
+      </div>
+    </div>
+    <!---------------------------------NAV BAR--------------------------------->
+
+    <!---------------------------------Main Container--------------------------------->
+    <div class="ui grid">
+      <!--Besoin de ça pour séparer le content du navbar-->
+      <div class="row">
+        <!--Besoin de ça pour séparer le content du navbar-->
+        <div class="sixteen wide column">
+          <!--MAIN DIV-->
+          <!--le main container ici-->
+          <div class="ui stackable grid">
+            <div id="case0-0" class="sixteen wide column">
+              <div class="ui grid">
+                <div class="row">
+                  <div id="statVentilateur1" class="four wide column">
+                    <h3 class="ui header center aligned">
+                      État du ventilateur #1
+                    </h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus, aut ullam et tempore quasi sit amet possimus
+                    praesentium quidem odio.
+                  </div>
+                  <div id="statVentilateur2" class="four wide column">
+                    <h3 class="ui header center aligned">
+                      État du ventilateur #2
+                    </h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sint illo in ipsam doloremque. Corrupti cupiditate
+                    eveniet voluptas ex expedita!
+                  </div>
+                  <div id="liveGaugeTemp" class="eight wide column">
+                    <h3 class="ui header center aligned">
+                      Température actuelle
+                    </h3>
+
+                    <div id="tempGauge" class="gauge size-1">
+                      <script>
+                        var g = new JustGage({
+                          id: "tempGauge",
+                          value: 5,
+                          min: 0,
+                          max: 100,
+                          relativeGaugeSize: true,
+                          gaugeWidthScale: 0.6
+                        });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="statPompe" class="four wide column">
+                    <h3 class="ui header center aligned">État de la pompe</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorum nostrum id assumenda praesentium corporis suscipit
+                    vel doloremque itaque adipisci velit!
+                  </div>
+                  <div id="statHeater" class="four wide column">
+                    <h3 class="ui header center aligned">État du heater</h3>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Neque ipsum debitis inventore! Magnam cumque reiciendis
+                    animi labore quaerat deleniti facere.
+                  </div>
+                  <div id="liveGaugeHumidity" class="eight wide column">
+                    <h3 class="ui header center aligned">
+                      humidité actuelle
+                    </h3>
+                    <div id="humidityGauge" class="gauge size-1">
+                      <script>
+                        var g = new JustGage({
+                          id: "humidityGauge",
+                          value: 5,
+                          min: 0,
+                          max: 100,
+                          relativeGaugeSize: true,
+                          gaugeWidthScale: 0.6
+                        });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="historyTemp" class="eight wide column">
+                    <h3 class="ui header center aligned">
+                      historique température
+                    </h3>
+                    <canvas id="tempChart" width="100" height="30"></canvas>
+                  </div>
+                  <div id="historyHumidity" class="eight wide column">
+                    <h3 class="ui header center aligned">
+                      historique Humidité
+                    </h3>
+                    <canvas id="humidityChart" width="100" height="30"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------Main Container--------------------------------->
+    <script src="Banner.js"></script>
+  </body>
+</html>
