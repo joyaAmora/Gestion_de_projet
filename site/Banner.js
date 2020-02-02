@@ -1,3 +1,12 @@
+$("#vent1OFF").hide();
+$("#vent1PROBLEM").hide();
+$("#vent2ON").hide();
+$("#vent2PROBLEM").hide();
+$("#pompeON").hide();
+$("#pompeOFF").hide();
+$("#heaterOFF").hide();
+$("#heaterPROBLEM").hide();
+
 var ctx = document.getElementById("tempChart");
 var myChart = new Chart(ctx, {
   type: "line",
