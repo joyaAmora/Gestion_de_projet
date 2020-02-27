@@ -1,0 +1,10 @@
+.size-1 {
+  width: 27%;
+}
+#tempGauge,
+#humidityGauge {
+  margin: 0 auto;
+}
+div#chartsRow {
+  height: 50px;
+}
