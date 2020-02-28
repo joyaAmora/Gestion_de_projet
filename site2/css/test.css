@@ -1,16 +1,13 @@
 #row1 {
-  background-color: red;
 }
 
 #gaugeGauche {
-  background-color: rgb(187, 255, 0);
   text-align: center;
 }
 #gaugeDroite {
-  background-color: rgb(150, 204, 0);
   text-align: center;
 }
-
+/*
 #gaugeGauche1 {
   background-color: rgb(141, 132, 0);
 }
@@ -34,4 +31,27 @@
 }
 #chart2 {
   background-color: darkgrey;
+}
+
+#pompe1 {
+  background-color: green;
+}
+#lumiere1 {
+  background-color: red;
+}
+*/
+
+#gg1 {
+  margin: 0 auto;
+}
+
+#gg2 {
+  margin: 0 auto;
+}
+
+#gg3 {
+  margin: 0 auto;
+}
+#gg4 {
+  margin: 0 auto;
 }
