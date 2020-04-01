@@ -69,7 +69,7 @@ var myChart = new Chart(ctx, {
           temp12
         ],
         backgroundColor: ["rgba(255, 99, 132, 0)"],
-        borderColor: ["rgba(255, 99, 132, 1)"],
+        borderColor: ["#F03E3E"],
         borderWidth: 4
       }
     ]

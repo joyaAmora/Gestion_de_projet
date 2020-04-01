@@ -69,7 +69,7 @@ var myChart2 = new Chart(ctx2, {
           humidity12
         ],
         backgroundColor: ["rgba(255, 99, 132, 0)"],
-        borderColor: ["rgba(0,191,255, 1)"],
+        borderColor: ["rgba(0, 128, 255, 1)"],
         borderWidth: 4
       }
     ]
