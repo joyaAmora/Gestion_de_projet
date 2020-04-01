@@ -19,4 +19,4 @@ app.get("/", (req, res) => {
   res.render("home"); //On render le index.pug en envoyant la class "tasks" en tant que data de base
 });
 
-app.listen(3000);
+app.listen(3001);
