@@ -1,0 +1,26 @@
+extends layouts/main
+
+block content
+    script(src="./js/tasks.js")
+    div(class="container col-5")
+        table(id="theTable" class="table")
+            thead(class="thead-dark")  
+                tr
+                    th(scope='col') # 
+                    th(scope='col') Titre
+                    th(scope='col') Description
+                    th(scope='col') Actions
+            tbody(id="tableBody")  
+                each task, index in tasksReversed
+                    include includes/task
+                tr 
+                    td(scope="row")
+                        td
+                            //input(name="title" placeholder="Titre" type="text" class="form-control")
+                            input(id="title" placeholder="Titre" class="form-control")
+                        td
+                            //input(name="description" placeholder="Description" type="text" class="form-control")
+                            input(id="description" placeholder="Description"  class="form-control")
+                        td
+                            //input(type="submit" class="btn btn-primary" value="ajouter") 
+                            button(id="addButton" class="btn btn-primary") Ajouter               
