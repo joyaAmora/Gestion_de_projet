@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon's Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"
+    />
+    <link rel="stylesheet" href="css/test.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./chart/Chart.js"></script>
+    <script src="./chart/chartjs-plugin-datalabels.min.js"></script>
+    <script src="./ressources/waterbubble.min.js"></script>
+  </head>
+  <body>
+    <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <!--||||||||||||||||||||||||||||||MENU|||||||||||||||||||||||||||-->
+    <div id="rowMenu" class="row">
+      <div class="cell-12">
+        <div id="menu">
+          <ul class="h-menu bg-lightSteel fg-white mt-2-minus">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="mainContainer" class="container">
+      <div id="row1" class="row">
+        <div id="gaugeGauche" class="cell-xl-6">
+          <div id="gaugeRow1" class="row">
+            <!--GaugeGauche1-->
+
+            <div id="gaugeGauche1" class="cell-sm">
+              <div id="gg1"></div>
+            </div>
+            <!--GaugeGauche1-->
+            <!--GaugeGauche2-->
+            <div id="gaugeGauche2" class="cell-sm">
+              <div id="gg2"></div>
+            </div>
+            <!--GaugeGauche2-->
+          </div>
+          <div id="gaugeRow2" class="row">
+            <!--GaugeGauche1-->
+            <div id="gaugeDroite1" class="cell-sm">
+              <div id="gg3"></div>
+            </div>
+            <!--GaugeGauche1-->
+            <!--GaugeGauche2-->
+            <div id="gaugeDroite2" class="cell-sm">
+              <div id="gg4"></div>
+            </div>
+            <!--GaugeGauche2-->
+          </div>
+        </div>
+
+        <div id="chartsDiv" class="cell-xl-6">
+          <div id="chartsRow1" class="row">
+            <!--chart1-->
+
+            <!--    <div style="position: relative; height:30vh; width:98vw"> -->
+            <div id="ch1" style="width:100%;"></div>
+
+            <!--chart1-->
+          </div>
+          <div id="chartsRow2" class="row">
+            <!--chart2-->
+
+            <!-- <div style="position: relative; height:30vh; width:98vw"> -->
+            <div id="ch2" style="width:100%"></div>
+            <!--chart2-->
+          </div>
+        </div>
+      </div>
+
+      <div id="StatusRow" class="row">
+        <!--GaugeGauche1-->
+        <div id="StatusInfo" class="cell">
+          <center>État des périphériques</center>
+          <div id="statusVentilateur" class="row">
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-2">Ventilateur:</div>
+            <div class="cell-xl-1">ON</div>
+            <div class="cell-xl-1">Durée:</div>
+            <div class="cell-xl-1">00h15</div>
+            <div class="cell-xl-1">+ / -</div>
+            <div class="cell-xl-2"></div>
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-1"></div>
+          </div>
+          <div id="statusLumiere" class="row">
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-2">Lumière</div>
+            <div class="cell-xl-1">OFF</div>
+            <div class="cell-xl-1">Début:</div>
+            <div class="cell-xl-1">8:00</div>
+            <div class="cell-xl-1">+ / -</div>
+            <div class="cell-xl-2">Fin:</div>
+            <div class="cell-xl-1">19:00</div>
+            <div class="cell-xl-1">+/-</div>
+            <div class="cell-xl-1"></div>
+          </div>
+          <div id="statusPompe" class="row">
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-2">Pompe</div>
+            <div class="cell-xl-1">ON</div>
+            <div class="cell-xl-1">Durée:</div>
+            <div class="cell-xl-1">00m30</div>
+            <div class="cell-xl-1">+ / -</div>
+            <div class="cell-xl-2"></div>
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-1"></div>
+            <div class="cell-xl-1"></div>
+          </div>
+        </div>
+        <!--GaugeGauche1-->
+      </div>
+    </div>
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="./ressources/gauge.min.js"></script>
+    <script src="./items/tempgauge1.js"></script>
+    <script src="./items/humiditygauge1.js"></script>
+    <script src="./items/humiditygauge2.js"></script>
+    <script src="./items/liquidGauge.js"></script>
+    <script src="./items/chart24h.js"></script>
+    <script src="./items/chartHumidity.js"></script>
+  </body>
+</html>
+
+<!--  
+    <div id="statusrow" class="row">
+        <div id="statusDetails" class="colspan-12"><center><h3>test</h3></center></div>
+    </div>
+        -->

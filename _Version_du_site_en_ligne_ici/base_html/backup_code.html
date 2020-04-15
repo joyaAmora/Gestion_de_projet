@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon's Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"
+    />
+    <link rel="stylesheet" href="css/test.css" />
+  </head>
+  <body>
+
+
+    <div id="mainContainer" class="container-fluid border bd-cyan">
+        
+        <div class="row flex-align-end">
+            <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <!--||||||||||||||||||||||||||||||MENU|||||||||||||||||||||||||||-->
+
+
+            <ul class="v-menu">
+                <li class="menu-title">General</li>
+                <li><a href="#"><span class="mif-home icon"></span> Home</a></li>
+                <li class="menu-title">Products</li>
+                <li><a href="#"><span class="mif-windows icon"></span> Windows</a></li>
+                <li><a href="#"><span class="mif-library icon"></span> Office 365</a></li>
+                <li><a href="#"><span class="mif-skype icon"></span> Skype</a></li>
+                <li class="menu-title">Support</li>
+                <li>
+                    <a href="#" data-hotkey="Alt+F1">Community</a>
+                    <ul class="v-menu" data-role="dropdown">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li class="divider"></li>
+                        <li class="p-2 bg-light">
+                            <button class="button square primary"><span class="mif-target"></span></button>
+                            <button class="button square success"><span class="mif-apps"></span></button>
+                            <button class="button square alert"><span class="mif-file-code"></span></button>
+                            <button class="button square warning"><span class="mif-download"></span></button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-title">Shop</li>
+                <li><a href="#"><span class="mif-cart icon"></span> Cart</a></li>
+            </ul>
+
+
+
+            <!--||||||||||||||||||||||||||||||MENU|||||||||||||||||||||||||||-->
+            <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            
+            <!------------------------------------------------------------------>
+            <div id="panel1" class="cell-md border bd-cyan">
+              <div class="row">
+                <div id="panel1-1" class="cell-md border">
+                  <center><image src="./gauge.jpg" />
+                </br>
+                    <p>informations</p></center>
+                </div>
+                <div id="panel1-2" class="cell-md">
+                  <center><image src="./gauge.jpg" />
+                  </br>
+                  <p>informations</p></center>
+                </div>
+              </div>
+            </div>
+        
+            <div id="panel2" class="cell-md border bd-cyan ml-5">
+              <div class="row">
+                <div id="panel2-1" class="cell-md ">
+                  <center><image src="./graph.jpg" />
+                  </br>
+                  <p>informations</p></center>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------------------------------>
+          </div>
+          <!------------------------------------------------------------------>
+          <div class="row mt-5 flex-align-start">
+            <div id="panel3" class="cell-md border bd-cyan">
+              <div class="row ">
+                <div id="panel3-1" class="cell-md">
+                  <center><image src="./gauge.jpg" />
+                  </br>
+                  <p>informations</p></center>
+                </div>
+                <div id="panel3-2" class="cell-md">
+                  <center><image src="./gauge.jpg" />
+                  </br>
+                  <p>informations</p></center>
+                </div>
+              </div>
+            </div>
+        
+            <div id="panel4" class="cell-md border bd-cyan ml-5">
+              <div class="row">
+                <div id="panel4-1" class="cell-md">
+                  <center><image src="./graph.jpg" />
+                  </br>
+                  <p>informations</p></center>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------------------------------------>
+    </div>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+  </body>
+</html>
