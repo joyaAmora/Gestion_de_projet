@@ -5,6 +5,6 @@ router.get("/", (req, res) => {
   res.render("home");
 });
 
-router.user("/capture", captureRoutes);
+router.use("/capture", captureRoutes);
 
 module.exports = router;
