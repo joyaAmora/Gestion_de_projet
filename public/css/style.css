@@ -6,3 +6,49 @@
 }
 
 /* COMMUN */
+#gaugeGauche {
+  text-align: center;
+}
+#gaugeDroite {
+  text-align: center;
+}
+
+#gg1 {
+  margin: 0 auto;
+}
+
+#gg2 {
+  margin: 0 auto;
+}
+
+#gg3 {
+  margin: 0 auto;
+}
+#gg4 {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+#mainContainer {
+  background-color: #f0f0f0;
+}
+
+#gaugeGauche2,
+#gaugeGauche1,
+#gaugeDroite1,
+#gaugeDroite2,
+#ch1,
+#ch2 {
+  background-color: white;
+  margin: 4px;
+}
+
+#StatusInfo {
+  margin-bottom: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: white;
+}

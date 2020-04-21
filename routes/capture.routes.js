@@ -8,6 +8,7 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   //Comment sauvegarder les posts de C en Mongoose
+  res.render("includes/capture", data)
 });
 
 module.exports = router;
