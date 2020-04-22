@@ -31,8 +31,7 @@ var chart24h = $("#ch1");
 
 chart24h.append(
   "<canvas id='chart24h'></canvas>"
-  //"<canvas id='chart24h' width='500' height=300'></canvas>"
-); /**/
+); /*chart24h.append("<canvas id='chart24h' width='500' height=300'></canvas>");*/
 
 var ctx = $("#chart24h");
 var myChart = new Chart(ctx, {
@@ -50,7 +49,7 @@ var myChart = new Chart(ctx, {
       heure9,
       heure10,
       heure11,
-      heure12,
+      heure12
     ],
     datasets: [
       {
@@ -67,13 +66,13 @@ var myChart = new Chart(ctx, {
           temp9,
           temp10,
           temp11,
-          temp12,
+          temp12
         ],
         backgroundColor: ["rgba(255, 99, 132, 0)"],
         borderColor: ["#F03E3E"],
-        borderWidth: 4,
-      },
-    ],
+        borderWidth: 4
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -82,12 +81,12 @@ var myChart = new Chart(ctx, {
       yAxes: [
         {
           ticks: {
-            beginAtZero: true,
-          },
-        },
-      ],
-    },
-  },
+            beginAtZero: true
+          }
+        }
+      ]
+    }
+  }
 });
 
 var testCalcul = $("#gaugeRow1").height();
