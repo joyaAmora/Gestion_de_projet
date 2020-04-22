@@ -4,15 +4,33 @@ const app = express();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
-const mysql = require('mysql');
 
+const mysql = require("mysql");
+
+////////////////////////////////////////////////////////////////////////////
+var fs = require("fs");
+var pathDuFichier = "./public/items/data.json";
+
+let measures = {
+  humiditySensor1: 100,
+  humiditySensor2: 69,
+  waterSensor: 10,
+  tempsensor1: 47,
+};
+
+let dataMeasures = JSON.stringify(measures, null, 2);
+//fs.writeFileSync(pathDuFichier, data);
+
+///////////////////////////////////////////////////////////////////////////
+
+/*
 //---------test mysql-------------
 //#region //Infos de connexion
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'datagetter',
-  password: 'Qwerty1234',
-  database: 'testing'
+  host: "projet.davegrenier.com",
+  user: "datagetter",
+  password: "Qwerty1234",
+  database: "testing",
 });
 //#endregion
 //#region //Connexion vers le server + gestion erreur
@@ -20,7 +38,7 @@ db.connect((err) => {
   if (err) {
     throw err;
   }
-  console.log('Connected to database');
+  console.log("Connected to database");
 });
 global.db = db;
 //#endregion
@@ -29,15 +47,13 @@ let query = "SELECT * FROM `SensorData`";
 
 db.query(query, (err, result) => {
   if (err) {
-    throw err
+    throw err;
   }
-  console.log(result)
+  console.log(result);
 });
 //#endregion
 //---------test mysql-------------
-
-
-
+*/
 app.set("view engine", "pug");
 
 app.get("/dashboard", (req, res) => {
@@ -51,5 +67,13 @@ app.get("/about", (req, res) => {
 app.get("/", (req, res) => {
   res.render("home"); //On render le index.pug en envoyant la class "tasks" en tant que data de base
 });
+
+//////////////
+
+app.get("/api", (req, res) => {
+  res.send(dataMeasures);
+  //res.send(10);
+});
+//////////////
 
 app.listen(3001);
