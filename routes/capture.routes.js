@@ -3,7 +3,9 @@ const Capture = require("../database/models/capture.js")
 
 router.get("/", (req, res) => {
   //.Find sur les données des dernières 24 heures
-  Capture.find()
+  Capture.find({createdAt: {$gte: new Date(Date.now()- 30*60000)}}, function (err, res) {
+    
+  })
   .exec()
   .then(captures => {
     console.log(captures)
@@ -12,6 +14,7 @@ router.get("/", (req, res) => {
     console.log(e)
   })
   // S'assurer que c'est dans une objet JS
+
 
 });
 

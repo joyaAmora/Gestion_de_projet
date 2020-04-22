@@ -15,3 +15,16 @@ app.set("view engine", "pug");
 app.listen(port, () => {
   console.log(`Server started on ${port}`);
 });
+
+// var fs = require("fs");
+// var pathDuFichier = "./public/items/data.json";
+ 
+// let measures = {
+//   humiditySensor1: 100,
+//   humiditySensor2: 69,
+//   waterSensor: 10,
+//   tempsensor1: 17,
+// };
+ 
+// let data = JSON.stringify(measures);
+// fs.writeFileSync(pathDuFichier, data);
