@@ -3,14 +3,20 @@ const mongoose = require("mongoose");
 const schema = new mongoose.Schema({
   temperature: {
     type: Number,
-    require: true,
+    require: false,
   },
   moisture: {
     type: Number,
-    require: true,
+    require: false,
+  },
+  body: {
+    type: String,
   },
 }, {
-  timestamps: true
+  timestamps: {
+    type:Date,
+    default: Date.now
+},
 });
 
 const Capture = mongoose.model("Capture", schema);
