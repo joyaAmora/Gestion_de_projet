@@ -23,12 +23,12 @@ block content
                         #gg4
                         // GaugeGauche2
             #chartsDiv.cell-xl-6
-                #chartsRow1.row(style='max-height: 175px;')
+                #chartsRow1.row(style='max-height: 199px;')
                     // chart1
                     // <div style="position: relative; height:30vh; width:98vw">
                     #ch1(style='width:100%;')
                     // chart1
-                #chartsRow2.row(style='max-height: 175px;')
+                #chartsRow2.row(style='max-height: 199px;')
                     // chart2
                     // <div style="position: relative; height:30vh; width:98vw">
                     #ch2(style='width:100%')
@@ -38,38 +38,10 @@ block content
             #StatusInfo.cell
                 center &Eacute;tat des p&eacute;riph&eacute;riques
                 #statusVentilateur.row
-                    .cell-xl-1
-                    .cell-xl-2 VENTILATORRRRRRR:
-                    .cell-xl-1 ON
-                    .cell-xl-1 Dur&eacute;e:
-                    .cell-xl-1 00h15
-                    .cell-xl-1 + / -
-                    .cell-xl-2
-                    .cell-xl-1
-                    .cell-xl-1
-                    .cell-xl-1
-                #statusLumiere.row
-                    .cell-xl-1
-                    .cell-xl-2 Lumi&egrave;re
-                    .cell-xl-1 OFF
-                    .cell-xl-1 D&eacute;but:
-                    .cell-xl-1 8:00
-                    .cell-xl-1 + / -
-                    .cell-xl-2 Fin:
-                    .cell-xl-1 19:00
-                    .cell-xl-1 +/-
-                    .cell-xl-1
-                #statusPompe.row
-                    .cell-xl-1
-                    .cell-xl-2 Pompe
-                    .cell-xl-1 ON
-                    .cell-xl-1 Dur&eacute;e:
-                    .cell-xl-1 00m30
-                    .cell-xl-1 + / -
-                    .cell-xl-2
-                    .cell-xl-1
-                    .cell-xl-1
-                    .cell-xl-1
+                        .cell-xl-5
+                        #fanstatus.cell-xl-1
+                        #light-status.cell-xl-1
+                        .cell-xl-5
                 // GaugeGauche1
             //script(src='https://cdn.metroui.org.ua/v4/js/metro.min.js')
 
@@ -81,3 +53,6 @@ block content
         script(src='./items/humiditygauge2.js')
         script(src='./items/chart24h.js')
         script(src='./items/chartHumidity.js')
+        script(src='./items/lightstatus.js')
+        script(src='./items/fanstatus.js')
+        
