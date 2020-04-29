@@ -1,15 +1,18 @@
 const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
-  temperature: {
+  AirTemp: {
     type: Number,
     require: false,
   },
-  moisture: {
+  AirHum: {
     type: Number,
     require: false,
   },
-  body: {
+  FanStatus: {
+    type: String,
+  },
+  LightStatus: {
     type: String,
   },
 }, {

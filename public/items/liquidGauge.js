@@ -1,8 +1,27 @@
-var waterSensor = 80;
-var waterLevelID = $("#gg3");
-waterLevelID.append(
-  "<canvas id='waterGauge' width='130' height='130'></canvas><div id='numberWater'></div><div id='waterFillGap'></div>"
-);
+//var waterLevelID = $("#gg3");
+/*waterLevelID.append(
+  "<center class='datitle'>Water Tank</center><canvas id='waterGauge' width='130' height='130'></canvas><div id='numberWater'></div><div id='waterFillGap'></div>"
+);*/
+
+//liquidGauge();
+
+//████████████████████████████████████████████████████████████████
+
+/*async function liquidGauge() {
+  const response = await fetch("/api", {});
+  const json = await response.json();
+  obj = json.waterSensor;
+  console.log("json.waterSensor = ", obj);
+*/
+//////////////////////////////////////////////////////////////
+
+var waterSensor = 100;
+
+/*var waterLevelID = $("#gg3");
+  waterLevelID.append(
+    "<canvas id='waterGauge' width='130' height='130'></canvas><div id='numberWater'></div><div id='waterFillGap'></div>"
+  );
+  */
 
 var numberWater = $("#numberWater");
 var waterFillGap = $("#waterFillGap");
@@ -40,5 +59,9 @@ $("#waterGauge").waterbubble({
   txt: waterSensor.toString() + "%",
 
   // enable water fill animation
-  animation: false
+  animation: false,
 });
+
+////////////////////////////////////////////
+
+//████████████████████████████████████████████████████████████████

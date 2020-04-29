@@ -30,7 +30,8 @@ var humidity12 = 56;
 var chartHumidity = $("#ch2");
 
 chartHumidity.append(
-  "<canvas id='chartHumidity'></canvas>" /* "<canvas id='chartHumidity' width='500' height=300'></canvas>"*/
+  "<canvas id='chartHumidity'></canvas>"
+  //"<canvas id='chartHumidity' width='500' height=300'></canvas>"
 );
 
 var ctx2 = $("#chartHumidity");
@@ -49,7 +50,7 @@ var myChart2 = new Chart(ctx2, {
       heure9,
       heure10,
       heure11,
-      heure12
+      heure12,
     ],
     datasets: [
       {
@@ -66,13 +67,13 @@ var myChart2 = new Chart(ctx2, {
           humidity9,
           humidity10,
           humidity11,
-          humidity12
+          humidity12,
         ],
         backgroundColor: ["rgba(255, 99, 132, 0)"],
         borderColor: ["rgba(0, 128, 255, 1)"],
-        borderWidth: 4
-      }
-    ]
+        borderWidth: 4,
+      },
+    ],
   },
   options: {
     responsive: true,
@@ -81,12 +82,12 @@ var myChart2 = new Chart(ctx2, {
       yAxes: [
         {
           ticks: {
-            beginAtZero: true
-          }
-        }
-      ]
-    }
-  }
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
+  },
 });
 
 var testCalcul = $("#gaugeRow1").height();
