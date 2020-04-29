@@ -6,10 +6,14 @@ idHumid.append(
 humiditySensor1();
 //█████████████████████████████████████████████████████████████████████████████████
 async function humiditySensor1() {
-  const response = await fetch("/api", {});
+  const response = await fetch("/tempgauge1", {});
+
   const json = await response.json();
-  obj = json.humiditySensor1;
+  obj = json.AirHum;
   console.log("json.humiditySensor1 = ", obj);
+
+  //obj = json.humiditySensor1;
+  //console.log("json.humiditySensor1 = ", obj);
 
   //////////////////////////////////////////////////////////////
 

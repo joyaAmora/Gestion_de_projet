@@ -6,9 +6,9 @@ idTempName1.append(
 tempGauge();
 //█████████████████████████████████████████████████████████████████████████████████
 async function tempGauge() {
-  const response = await fetch("/api", {});
+  const response = await fetch("/tempgauge1", {});
   const json = await response.json();
-  obj = json.tempsensor1;
+  obj = json.AirTemp;
   console.log("json.tempsensor1 = ", obj);
 
   //////////////////////////////////////////////////////////////

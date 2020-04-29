@@ -6,9 +6,9 @@ idHumidGround.append(
 humiditySensor2();
 //█████████████████████████████████████████████████████████████████████████████████
 async function humiditySensor2() {
-  const response = await fetch("/api", {});
+  const response = await fetch("/tempgauge1", {});
   const json = await response.json();
-  obj = json.humiditySensor2;
+  obj = json.SolHum;
   console.log("json.humiditySensor2 = ", obj);
 
   //////////////////////////////////////////////////////////////
