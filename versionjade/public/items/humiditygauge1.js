@@ -1,6 +1,6 @@
 var idHumid = $("#gg2");
 idHumid.append(
-  "<canvas id='humidityGauge' width='155' height='155'></canvas><div id='numberHumidity'></div><div id='humidityFillGap'></div>"
+  "<center class='datitle'>Air humidity</center><canvas id='humidityGauge' width='155' height='155'></canvas><div id='numberHumidity'></div><div id='humidityFillGap'></div>"
 );
 
 humiditySensor1();

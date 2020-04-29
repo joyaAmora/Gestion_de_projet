@@ -1,7 +1,7 @@
-var waterLevelID = $("#gg3");
-waterLevelID.append(
-  "<canvas id='waterGauge' width='130' height='130'></canvas><div id='numberWater'></div><div id='waterFillGap'></div>"
-);
+//var waterLevelID = $("#gg3");
+/*waterLevelID.append(
+  "<center class='datitle'>Water Tank</center><canvas id='waterGauge' width='130' height='130'></canvas><div id='numberWater'></div><div id='waterFillGap'></div>"
+);*/
 
 //liquidGauge();
 

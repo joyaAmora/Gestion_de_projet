@@ -15,10 +15,12 @@ router.get("/api", (req, res) => {
 
 router.get("/tempgauge1", (req, res) => {
   measures.test(function (results) {
+    console.log(results);
     var test = JSON.stringify(results);
     var test2 = JSON.parse(test);
-    console.log("test2::::::" + test2);
+    // console.log("test2::::::" + test2);
     res.send(test2);
+    //console.log(results.AirHum);
   });
 });
 

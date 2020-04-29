@@ -52,3 +52,7 @@ body {
   margin-right: 4px;
   background-color: white;
 }
+.datitle {
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+}

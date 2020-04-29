@@ -1,6 +1,6 @@
 var idTempName1 = $("#gg1");
 idTempName1.append(
-  "<canvas id='tempGauge' width='155' height='155'></canvas><div id='numbertemp'></div><div id='tempFillGap'></div>"
+  "<center class='datitle'>temperature</center><canvas id='tempGauge' width='155' height='155'></canvas><div id='numbertemp'></div><div id='tempFillGap'></div>"
 );
 
 tempGauge();
