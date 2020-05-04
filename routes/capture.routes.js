@@ -2,21 +2,7 @@ const router = require("express").Router();
 const Capture = require("../database/models/capture.js");
 
 router.get("/", (req, res) => {
-  //.Find sur les données des dernières x heures actuellement 130
-
-  Capture.find(
-    { createdAt: { $gte: new Date(Date.now() - 1000 * 60 * 60 * 130) } },
-    function (err, res) {}
-  )
-    .exec()
-    .then((captures) => {
-      console.log(captures);
-      res.render("capture", { captures });
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-  // S'assurer que c'est dans une objet JS
+      res.render("capture");
 });
 
 router.post("/", (req, res) => {

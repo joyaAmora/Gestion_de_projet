@@ -56,3 +56,17 @@ body {
   font-weight: bold;
   font-variant-caps: all-petite-caps;
 }
+
+#StatusInfo {
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+  text-align: center;
+}
+
+.statusON {
+  color: #3faf4c;
+}
+
+.statusOFF {
+  color: #9e2222;
+}

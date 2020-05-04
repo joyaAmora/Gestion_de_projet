@@ -23,6 +23,16 @@ exports.test = function (callback) {
     });
 };
 
+exports.last24Hours =   function(callback) {
+  Capture.find(
+  { createdAt: { $gte: new Date(Date.now() - 1000 * 60 * 60 * 130) } },
+  function (err, res) {}
+)
+  .exec()
+  .then((captures) => {
+    callback(captures);
+  });
+};
 /////////////
 
 /////////////
