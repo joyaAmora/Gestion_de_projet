@@ -1,33 +1,5 @@
 var humidity = []
 var hour = []
-
-var heure1;
-var heure2;
-var heure3;
-var heure4;
-var heure5;
-var heure6;
-var heure7;
-var heure8;
-var heure9;
-var heure10;
-var heure11;
-var heure12;
-
-//---------------------------
-
-var humidity1 
-var humidity2 
-var humidity3 
-var humidity4 
-var humidity5 
-var humidity6
-var humidity7 
-var humidity8 
-var humidity9 
-var humidity10 
-var humidity11 
-var humidity12 
 //---------------------------
 
 var chartHumidity = $("#ch2");
@@ -42,35 +14,36 @@ function humid24Hours(data) {
   var i = 0
   for(i; i< 12; i++){
     humidity[i] = data[i].AirHum
-    formatHour = new Date(data[i].createdAt).toLocaleTimeString()
+    //formatHour = new Date(data[i].createdAt).toTimeString().slice(0,5)
+    formatHour = new Date(data[i].createdAt).toLocaleTimeString("fr-CA").slice(0,7)
     hour[i] = formatHour
   }
 
-    heure1 = hour[0];
-    heure2 = hour[1];
-    heure3 = hour[2];
-    heure4 = hour[3];
-    heure5 = hour[4];
-    heure6 = hour[5];
-    heure7 = hour[6];
-    heure8 = hour[7];
-    heure9 = hour[8];
-    heure10 = hour[9];
-    heure11 = hour[10];
-    heure12 = hour[11];
+    var heure1 = hour[0];
+    var heure2 = hour[1];
+    var heure3 = hour[2];
+    var heure4 = hour[3];
+    var heure5 = hour[4];
+    var heure6 = hour[5];
+    var heure7 = hour[6];
+    var heure8 = hour[7];
+    var heure9 = hour[8];
+    var heure10 = hour[9];
+    var heure11 = hour[10];
+    var heure12 = hour[11];
 
-    humidity1 = humidity[0];
-    humidity2 = humidity[1];
-    humidity3 = humidity[2];
-    humidity4 = humidity[3];
-    humidity5 = humidity[4];
-    humidity6 = humidity[5];
-    humidity7 = humidity[6];
-    humidity8 = humidity[7];
-    humidity9 = humidity[8];
-    humidity10 = humidity[9];
-    humidity11 = humidity[10];
-    humidity12 = humidity[11];
+    var humidity1 = humidity[0];
+    var humidity2 = humidity[1];
+    var humidity3 = humidity[2];
+    var humidity4 = humidity[3];
+    var humidity5 = humidity[4];
+    var humidity6 = humidity[5];
+    var humidity7 = humidity[6];
+    var humidity8 = humidity[7];
+    var humidity9 = humidity[8];
+    var humidity10 = humidity[9];
+    var humidity11 = humidity[10];
+    var humidity12 = humidity[11];
 
   var ctx2 = $("#chartHumidity");
   var myChart2 = new Chart(ctx2, {

@@ -1,33 +1,5 @@
 var hours = []
 var temp = []
-var heure1
-var heure2
-var heure3
-var heure4
-var heure5 
-var heure6 
-var heure7
-var heure8 
-var heure9 
-var heure10 
-var heure11 
-var heure12
-
-//---------------------------
-
-var temp1 
-var temp2
-var temp3 
-var temp4 
-var temp5 
-var temp6 
-var temp7 
-var temp8 
-var temp9 
-var temp10 
-var temp11
-var temp12 
-//---------------------------
 
 var chart24h = $("#ch1");
 
@@ -41,35 +13,36 @@ function temp24Hours(data) {
   var i = 0
   for(i; i< 12; i++){
     temp[i] = data[i].AirTemp
-    formatHours = new Date(data[i].createdAt).toLocaleTimeString()
+    //formatHours = new Date(data[i].createdAt).toLocaleTimeString() affiche hh:mm:ss format 12hrs
+    formatHours = new Date(data[i].createdAt).toLocaleTimeString("fr-CA").slice(0,7)
     hours[i] = formatHours
   }
 
-  heure1 = hours[0];
-  heure2 = hours[1];
-  heure3 = hours[2];
-  heure4 = hours[3];
-  heure5 = hours[4];
-  heure6 = hours[5];
-  heure7 = hours[6];
-  heure8 = hours[7];
-  heure9 = hours[8];
-  heure10 = hours[9];
-  heure11 = hours[10];
-  heure12 = hours[11];
+  var heure1 = hours[0];
+  var heure2 = hours[1];
+  var heure3 = hours[2];
+  var heure4 = hours[3];
+  var heure5 = hours[4];
+  var heure6 = hours[5];
+  var heure7 = hours[6];
+  var heure8 = hours[7];
+  var heure9 = hours[8];
+  var heure10 = hours[9];
+  var heure11 = hours[10];
+  var heure12 = hours[11];
 
-  temp1 = temp[0]
-  temp2 = temp[1]
-  temp3 = temp[2]
-  temp4 = temp[3]
-  temp5 = temp[4]
-  temp6 = temp[5]
-  temp7 = temp[6]
-  temp8 = temp[7]
-  temp9 = temp[8]
-  temp10 = temp[9]
-  temp11 = temp[10]
-  temp12 = temp[11]
+  var temp1 = temp[0]
+  var temp2 = temp[1]
+  var temp3 = temp[2]
+  var temp4 = temp[3]
+  var temp5 = temp[4]
+  var temp6 = temp[5]
+  var temp7 = temp[6]
+  var temp8 = temp[7]
+  var temp9 = temp[8]
+  var temp10 = temp[9]
+  var temp11 = temp[10]
+  var temp12 = temp[11]
  
 
   var ctx = $("#chart24h");
