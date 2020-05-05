@@ -38,11 +38,12 @@ router.get("/last24hours", (req,res) => {
 
 
 router.get("/datas", (req, res) => {
-  Capture.find(         //36hrs car data serveur avec 4h d'avance
-  { createdAt: { $gte: new Date(Date.now() - 1000 * 60 * 60 * 36) } },
+  Capture.find(         //24hrs data serveur
+  { createdAt: { $gte: new Date(Date.now() - 1000 * 60 * 60 * 24) } },
   function (err, res) {})
   .exec()
   .then((captures) => {
+    //console.log(captures)
     //reduce en JS ou boucle modulo 4
     var table = []
     var j = 0
@@ -55,11 +56,11 @@ router.get("/datas", (req, res) => {
     }
     res.send(table)
     //validation qu'on a un tableau de 12 données
-    // var k = 0;
-    // for(k;k < 12; k++)
-    // {
-    //     console.log(table[k])
-    // }    
+    var k = 0;
+    for(k;k < 12; k++)
+    {
+        console.log(table[k])
+    }    
   })
   .catch((e) => {
     console.log(e);
